@@ -1,0 +1,25 @@
+[
+    {
+      "membershipType": "Basic",
+      "price": 29.99,
+      "benefits": ["Access to gym facilities", "Locker room usage", "Fitness classes (limited)"],
+      "image": "https://example.com/basic_membership.jpg"
+    },
+    {
+      "membershipType": "Standard",
+      "price": 49.99,
+      "benefits": ["Full access to gym facilities", "Locker room usage", "Unlimited fitness classes"],
+      "image": "https://example.com/standard_membership.jpg"
+    },
+    {
+      "membershipType": "Premium",
+      "price": 79.99,
+      "benefits": [
+        "Full access to gym facilities",
+        "Locker room usage",
+        "Unlimited fitness classes",
+        "Personal trainer sessions (2 per month)"
+      ],
+      "image": "https://example.com/premium_membership.jpg"
+    }
+  ]
