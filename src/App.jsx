@@ -1,15 +1,15 @@
-import './App.css'
+import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import PriceList from './components/PriceList/PriceList';
+import ProductList from './components/ProductList/ProductList';
 
 function App() {
 
   return (
     <>
       <Navbar></Navbar>
-      <PriceList></PriceList>
+      <ProductList></ProductList>
     </>
   )
 }
 
-export default App
+export default App;
