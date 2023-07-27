@@ -1,5 +1,5 @@
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
-import Links from "./Links/Links";
+import Links from "../Links/Links";
 import { useState } from 'react';
 
 const Navbar = () => {
@@ -33,14 +33,14 @@ const Navbar = () => {
             "path": "/services"
           }
       ]
-      
+
     return (
         <>
             <nav>
-                <div onClick={()=>setOpen(!open)}>
+                <div onClick={()=>setOpen(!open)} className='md:hidden'>
                     <span>{open === true ? <XMarkIcon className="w-6 h-6 text-blue-500" /> : <Bars3Icon className="w-6 h-6 text-blue-500" />}</span>
                 </div>
-                <ul className="md:flex">
+                <ul className={`md:flex absolute md:static duration-500 mt-8 md:mt-0 py-2 pl-8 bg-purple-400 ${open ? 'top-6' : '-top-48'}`}>
                     {
                         routes.map(route => <Links key={route.id} route={route}></Links>)
                     }
