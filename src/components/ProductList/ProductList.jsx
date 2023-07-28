@@ -13,8 +13,8 @@ const ProductList = () => {
 
     return (
         <>
-            <h1 className="my-5 text-3xl font-extrabold text-center text-purple-700 bg-purple-300">Awesome Products: {products.length}</h1>
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+            <h1 className="my-5 text-3xl font-extrabold text-center text-purple-700 bg-purple-300">Awesome Products</h1>
+            <div className="grid gap-4 md:grid-cols-3">
                 {
                     products.map(product => <ProductCard key={product.id} product={product}></ProductCard>)
                 }
